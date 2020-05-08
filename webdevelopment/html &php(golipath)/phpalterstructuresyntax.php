@@ -1,4 +1,3 @@
-<?php
 <?php 
 /*$n = 13;
 if ($n%2==0){
@@ -35,18 +34,28 @@ default:
 echo "Odd Number";
 endswitch;*/
 
-$n = 13;
+$n = 12;
 
-if ($n%2==0):
-?>
-Even Number
-some Text
-<?php
-else:
-?>
-Odd Number 
-Some Text ++
-<?php
-endif;
-?>
-
+if($n%2==0):
+  ?>
+  Even Number
+  Some Text
+  <?php
+  else:
+    ?>
+    Odd Number
+    Some Text ++
+    <?php
+    endif;
+    if($n%2==0){
+      ?>
+      Even Number
+      Some Text
+      <?php
+    }else{
+      ?>
+      Odd Number
+      Some Text ++
+      <?php
+    }
+    ?>
